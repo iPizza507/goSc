@@ -1,0 +1,185 @@
+header {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 2rem;
+  background: #f1f1f1;
+  position: relative;
+}
+
+header img {
+  width: 432px;
+}
+
+header h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 4rem;
+  line-height: 55px;
+  margin-bottom: 52px;
+}
+
+header p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  margin-bottom: 66px;
+  text-transform: capitalize;
+  max-width: 720px;
+}
+
+header a {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 55px;
+  color: #ffffff;
+}
+
+.FlowerPatternOne {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 108px;
+}
+
+.header-container-img {
+  z-index: 20;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 5em;
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 750px;
+}
+
+.shop-now a {
+  background: #1a293dd4;
+  padding: 0.05em 1em;
+  width: fit-content;
+  display: flex;
+  font-size: 1.25rem;
+  align-items: center;
+  text-transform: capitalize;
+  transition: 0.25s linear;
+}
+.shop-now a:hover {
+  background: #b18a75dc;
+  color: white;
+}
+.shop-now > a > svg {
+  margin-right: 8px;
+  transform: scale(0.8);
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+  header {
+    padding: 1em 2rem;
+  }
+  .header-container-img {
+    width: 40%;
+  }
+
+  header p {
+    min-width: 400px;
+    max-width: 550px;
+  }
+
+  header img {
+    width: 100%;
+    min-width: 308px;
+  }
+
+  header h1 {
+    font-size: 46px;
+    margin-bottom: 26px;
+  }
+
+  header a {
+    font-size: 20px;
+  }
+
+  .shop-now a {
+    padding: 4px 16px;
+  }
+
+  header p {
+    font-size: 22px;
+    line-height: 42px;
+    margin-bottom: 42px;
+  }
+
+  .container {
+    gap: 0;
+  }
+
+  .call-to-action {
+    min-width: 400px;
+    max-width: 550px;
+    padding-right: 35px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    padding: 0.5em 2rem;
+  }
+  .header-container-img {
+    width: 40%;
+  }
+  header p {
+    min-width: 300px;
+    max-width: 550px;
+  }
+  header img {
+    width: 100%;
+    min-width: 250px;
+  }
+  header h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  header a {
+    font-size: 20px;
+  }
+
+  .shop-now {
+    padding: 4px 16px;
+  }
+
+  header p {
+    font-size: 22px;
+    line-height: 42px;
+    margin-bottom: 42px;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 4em;
+    align-items: center;
+  }
+
+  .FlowerPatternOne {
+    top: 70px;
+  }
+
+  .header-container-img {
+    width: 70%;
+  }
+  .call-to-action {
+    padding-right: 0px;
+    min-width: 300px;
+  }
+}

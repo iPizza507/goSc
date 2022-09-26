@@ -1,0 +1,72 @@
+/* -------------------------------------- ALL PRODUCTS --------------------------------------*/
+
+.bestSellers-main {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.bestSellers-main > div > h2{
+    font-size: 40px;
+    text-align: center;
+}
+.bestSellers-main > div > div > div {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.bestSellers-products{
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+}
+.bestSellers-main-list-auto{
+    margin: 0 auto;
+}
+.bestSellers-main > div > div > div > ul > li{
+    display: inline;
+    cursor: pointer;
+    padding: 0.2rem 0.5rem; 
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+.bestSellers-main > div > div > div > ul > li:hover{
+    background-size: 100% 2px;
+}
+
+.bestSellers-main > div > div > div > button{
+    border: 1px solid #000;
+    padding: 0.25rem;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.bestSellers-main-list > div > button:hover{
+    background-color: rgb(71, 71, 71);
+}
+@media only screen and (min-width:701px) and (max-width: 1100px) {
+    .bestSellers-products{
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width: 699px) {
+    .bestSellers-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .bestSellers-main-list > div > button:hover{
+        text-decoration:none;
+    }
+    .bestSellers-products{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+  

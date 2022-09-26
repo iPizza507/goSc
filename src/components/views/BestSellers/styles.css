@@ -1,0 +1,191 @@
+/* -------------------------------------- bestSellers --------------------------------------*/
+
+.bestSellers-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.bestSellers-header{
+    background-image: url('/public/assets/zaraBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.bestSellers-header-img{
+    position: absolute;
+    top: 5%;
+    right: 0;
+}
+.bestSellers-header > div{
+    padding: 200px;
+}
+
+.bestSellers-header > div >h1{
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+    color: #ffff;
+}
+
+.bestSellers-header > div > p{
+    font-family: Roboto;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 1rem 0rem;
+    width: 20rem;
+    color: #ffff;
+}
+
+.bestSellers-header > div > button{
+    color: #000;
+    background-color: #ffff;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    align-items: center;
+    transition: all 0.5s;
+}
+.bestSellers-header > div > button:hover{
+    background-color: #F1F1F1;
+}
+
+.bestSellers-footer{
+    text-align: center;
+    background-color: #F1F1F1;
+    margin-top: 50px;
+}
+.bestSellers-footer h2{
+    font-family: Roboto;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 53px;
+    letter-spacing: 0.1em;
+    margin: 50px auto 20px auto;
+}
+.bestSellers-footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.bestSellers-footer ul li{
+    margin: 10px;
+}
+.bestSellers-footer ul li img{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: all .2s;
+    cursor: pointer;
+}
+.bestSellers-footer ul li img:hover{
+    transform: scale(1.1);
+}
+
+.bestSellers-footer h3{
+    font-family: Roboto;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 53px;
+    letter-spacing: 0.1em;
+    margin: 20px auto 50px auto;
+}
+
+.bestSellers-footer div{
+    color:white;
+    margin-bottom: 30px;
+}
+.bestSellers-footer div input{
+    width: 40%;
+    margin: 20px 20px;
+    padding: 5px 20px;
+    background:none;
+    border: none;
+    outline: 0px;
+    border-bottom: 2px solid #000;
+}
+.bestSellers-footer div button{
+    font-weight: bold;
+    padding: 5px 20px;
+    background:none;
+    border: none;
+    outline: 0px;
+    border-bottom: 2px solid #000;
+    cursor: pointer;
+}
+@media only screen and (min-width:701px) and (max-width: 1100px) {
+    .bestSellers-header > div{
+        padding: 3rem;
+        width: 100%;
+        text-align: center;
+    }
+    .bestSellers-header-img{
+        width: 30%;
+    }
+    .bestSellers-header > div >p{
+        margin: 1rem auto;
+    }
+    .bestSellers-footer ul li img{
+      width: 100%;
+      height: 100%;
+    }
+    
+}
+@media all and (max-width: 700px) {
+    .bestSellers-header{
+        background-image: url('/public/assets/zaraBackground.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        display: block;
+        text-align: center;
+    }
+    .bestSellers-header-img{
+        width: 30%;
+    }
+    .bestSellers-header > div{
+        padding: 0.5rem;
+    }
+    
+    .bestSellers-header > div >h1{
+        font-size: 2.5rem;
+    }
+    
+    .bestSellers-header > div > p{
+        font-size: 1rem;
+        text-align: center;
+        margin: 0.2rem auto;
+        width: 70%;
+    }
+    
+    .bestSellers-header > div > button{
+        margin: 0 0 1rem 0;
+    } 
+
+    .bestSellers-footer h2{
+        font-size: 2rem;
+    }
+    .bestSellers-footer ul li img{
+        width: 100%;
+        height: 100%;
+      }
+    
+    .bestSellers-footer h3{
+        font-size: 2rem;
+    }
+    
+    .bestSellers-footer div{
+        color:white;
+        margin-bottom: 30px;
+    }
+}
+  

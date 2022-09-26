@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+.cart > div {
+  display: flex;
+  padding: 2em;
+  justify-content: center;
+  gap: 1.5em;
+  background-color: #f1f1f1;
+}
+.cart > h2 {
+  padding-left: 14%;
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: "Playfair Display", serif;
+}
+.cart > h3 {
+  padding-left: 14%;
+  font-weight: 100;
+  font-family: "Playfair Display", serif;
+}
+.cart-left {
+  width: 70%;
+  max-width: 1000px;
+}
+.cart-left > tbody > tr {
+  background-color: white;
+}
+.cart-left > tbody > h3 {
+  background-color: white;
+  text-align: center;
+}
+.cart-left > tbody > tr > td {
+  width: 16.66%;
+  padding: 1em 0.25em;
+  text-align: center;
+  border: none;
+  border-top: 1.5px rgb(238, 238, 238) solid;
+}
+.sorry{
+  text-align: center;
+  display: flex;
+}
+.sorry > td{
+  width: 100%;
+}
+
+.cart-right {
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  width: 40%;
+  max-width: 350px;
+}
+.cart-right > div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 85%;
+  /* border: 2px red solid; */
+}
+.cart-right > div > p {
+  background-color: white;
+  margin-top: 0.25em;
+  padding: 1.5em;
+  width: 90%;
+  /* border: 4px green solid; */
+}
+.cart-right > button {
+  width: 85%;
+  padding: 1.5em;
+  margin-top: 1em;
+  opacity: 0.8;
+  cursor: pointer;
+  /* border: black 3px solid; */
+  border-radius: 5px;
+  background-color: rgb(212, 192, 75);
+  color: white;
+  transition: all 0.5s;
+}
+.cart-right > button:hover {
+  opacity: 1;
+}
+
+.quantity-td {
+  gap: 0.25em;
+}
+
+.btn-quantity {
+  opacity: 0.8;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgb(212, 192, 75);
+  color: white;
+  transition: all 0.5s;
+  margin: 0 0.8em;
+  padding: 0.15em;
+}
+
+.btn-quantity:hover {
+  opacity: 1;
+}
+
+@media (max-width: 980px) {
+  .cart-container {
+    flex-direction: column;
+  }
+  .cart-left {
+    width: 100%;
+  }
+  .cart-right {
+    width: 100%;
+    max-width: 100%;
+  }
+  .cart-right > div {
+    text-align: center;
+    width: 100%;
+  }
+  .cart-right > button {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .cart-container {
+    flex-direction: column;
+  }
+  .cart-left {
+    width: 100%;
+  }
+  .cart-right {
+    width: 100%;
+    max-width: 100%;
+  }
+  .cart-right > div {
+    text-align: center;
+    width: 100%;
+  }
+  .cart-right > button {
+    width: 100%;
+  }
+  .cart-phone > tbody {
+    display: flex;
+    flex-direction: column;
+  }
+  .cart-phone > tbody > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .cart-phone > tbody > div > tr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  .cart-phone > tbody > div > tr > td {
+    display: flex;
+    width: 100%;
+    padding: 1rem 1.3rem;
+  }
+  .cart-phone > tbody > div > tr > td:first-child {
+    justify-content: start;
+    font-weight: 800;
+  }
+  .cart-phone > tbody > div > tr > td:nth-child(2) {
+    justify-content: end;
+  }
+  tr,
+  td {
+    border: none;
+  }
+  .td-img,
+  .td-x {
+    justify-content: center !important;
+  }
+  .td-x a {
+    height: 25px;
+    line-height: 25px;
+    width: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 50%;
+    text-align: center;
+    border: #000000 solid 1px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  .td-x a:hover {
+    border-color: #c7ab62;
+    color: #c7ab62;
+  }
+}
